@@ -1,0 +1,34 @@
+<hr>
+<h1>NGMODEL</h1>
+<p>Nombre: {{nombre}}</p>
+<input type="text" [(ngModel)]="nombre">
+
+<hr>
+<h1>Event Binding</h1>
+<h3>El texto de introduccion es: {{ejemplo}}</h3>
+<input type="text" [value]="person.name" (keyup)="changeName($event)">
+
+<p>Edad: {{person.age}} </p>
+<button (click)="increaseAge()">Aumentar</button>
+
+<div class="box" (scroll)="onScroll($event)">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero expedita officia enim rem harum perferendis repudiandae facilis? Aperiam provident optio inventore, at quo beatae atque eligendi iste doloremque reiciendis!
+  </p>
+</div>
+
+<hr>
+<h1>Property Binding</h1>
+<button [disabled]="habilitado" >Enviar</button>
+<input type="text" [value]="title" [disabled]="habilitado">
+
+<input type="text">
+<hr>
+<h1>String Interpolacion</h1>
+<h1>hola mundo</h1>
+<h2>3+3 {{3+3}} </h2>
+<p>el titulo del presente proyecto es: {{title }}</p>
+<p>nombre: {{nombre}} </p>
+<p>Edad: {{edad}} </p>
+<img src="{{img}}" alt="Image">
+
